@@ -8,6 +8,11 @@ body{
     font-size: 18px;
 }
 
+a{
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+}
+
 .centro{
     text-align: center;
 }
@@ -231,21 +236,32 @@ footer{
 
 .red-li{
     padding-right: 25px;
+    cursor: pointer;
 }
 
-input{
-    background-color: hsl(171, 66%, 44%);
-    background-color: hsl(233, 100%, 69%);
-    background-color: hsl(210, 10%, 33%);
-    background-color: hsl(201, 11%, 66%);
-}
 
 @media (min-width: 375px) and (max-width: 480px){
 
+    .fondo{
+        background-image: url(./images/bg-header-mobile.png);
+    }
 
     h1{
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .centro{
+        display: block;
+        margin: auto;
+    }
+
+    .mac{
+        font-size: 32px;
+    }
+
+    .p-1{
+        font-size: 20.7px;
     }
 
     .btns{
@@ -258,6 +274,10 @@ input{
         margin-bottom: 10px;
     }
 
+    .azul{
+        margin-right:10px ;
+    }
+
     .section-1{
         display: flex;
         flex-direction: column;
@@ -265,13 +285,22 @@ input{
 
     .phone-ios{
         width: 346px;
+        display: block;
+        margin: auto;
+    }
+    
+    .ios-mac{
+        width: 320px;
+        display: block;
+        margin: auto;
+        position: inherit;
     }
 
     .lista{
         display: flex;
         flex-direction: column;
     }
-
+    
     .logos{
         display: flex;
         flex-direction: column;
@@ -281,10 +310,63 @@ input{
         display: flex;
         flex-direction: column;
     }
-
+    
     .footer-flex{
         display: flex;
         flex-direction: column;
     }
 
-}
+    .marca, .micro, .vector{
+        margin-bottom: 50px;
+    }
+
+    .info-mac{
+        display: flex;
+        flex-direction:  column;
+        place-items: center;
+    }
+
+    .text-mac{
+        font-size: 17px;
+        text-align-last:center ;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .lista{
+        display: block;
+        margin: auto;
+    }
+
+    .flow{
+        font-size: 17px;
+        display: block;
+        margin: auto;
+    }
+
+    .charge-2{
+        font-size: 19px;
+    }
+
+    .clip-ios{
+        font-size: 34px;
+    }
+
+    .footer-logo{
+        display: block;
+        margin-bottom: 35px;
+        margin-top: 15px;
+    }
+
+    .footer-li{
+        padding-bottom: 25px;
+    }
+
+    .red{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    }
